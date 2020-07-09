@@ -2,7 +2,9 @@
   package="com.voiceserachksp">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
@@ -10,7 +12,7 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
-      <activity
+      <meta-data android:name='com.google.android.geo.API_KEY' android:value="AIzaSyDVJki3RdLACXHcetKn2w2UlwQqXBg_AUY"/>      <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
         android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"

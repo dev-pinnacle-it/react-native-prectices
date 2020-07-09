@@ -30,6 +30,9 @@ class App extends Component {
       <View style={{padding:10,justifyContent:'space-around'}}>
         <Button title='Search' onPress={()=>{this.props.navigation.navigate('routeTwo')}}></Button>
         <Button title='Map' onPress={()=>{this.props.navigation.navigate('Map')}}></Button>
+        <Button title='QR Scanner' onPress={()=>{this.props.navigation.navigate('QR')}}></Button>
+        <Button title='Camera' onPress={()=>{this.props.navigation.navigate('CM')}}></Button>
+        <Button title='Vedio Play' onPress={()=>{this.props.navigation.navigate('VD')}}></Button>
       </View>
     );
   }
